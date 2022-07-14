@@ -3,11 +3,11 @@ import ru.netology.entity.Country;
 import ru.netology.i18n.LocalizationServiceImpl;
 
 public class LocalizationServiceImplTest {
-    LocalizationServiceImpl sut;
+    LocalizationServiceImpl test;
 
     @BeforeEach
     public void init() {
-        sut = new LocalizationServiceImpl();
+        test = new LocalizationServiceImpl();
     }
 
     @BeforeAll
@@ -27,7 +27,7 @@ public class LocalizationServiceImplTest {
         String expected = "Добро пожаловать";
 
         //when
-        String result = sut.locale(country);
+        String result = test.locale(country);
 
         //then
         Assertions.assertEquals(expected, result);
