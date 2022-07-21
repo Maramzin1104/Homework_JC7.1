@@ -20,6 +20,10 @@ public class Main {
         headers.put(MessageSenderImpl.IP_ADDRESS_HEADER, "172.0.32.11");
         messageSender.send(headers);
 
+        Map<String, String> headers2 = new HashMap<String, String>();
+        headers.put(MessageSenderImpl.IP_ADDRESS_HEADER, "96.44.183.149");
+        messageSender.send(headers);
+
 
     }
 }
